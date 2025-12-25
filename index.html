@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lenskart Clone</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+ <div class="logo">
+  Lenskart
+</div>
+
+
+  <!-- <input type="text" id="search" placeholder="Search glasses..." /> -->
+
+  <div class="nav-right">
+    <span id="user-name"></span>
+    <button id="login-btn">Login</button>
+    <button id="logout-btn" >Logout</button>
+
+    <div class="cart" onclick="window.location.href='cart.html'">
+      🛒 Cart (<span id="cart-count">0</span>)
+    </div>
+  </div>
+</header>
+
+
+<!-- BANNER -->
+<section class="banner">
+  <h1>Buy Eyeglasses Online</h1>
+  <p>Starting at ₹999</p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="product-list">
+  <!-- JS will add products here -->
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Lenskart Website | Made by Sayali</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

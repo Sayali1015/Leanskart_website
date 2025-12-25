@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout | Lenskart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Lenskart</div>
+</header>
+
+<section class="checkout">
+  <div class="checkout-card">
+    <h2>Checkout</h2>
+
+    <h3>Order Summary</h3>
+    <div id="order-items"></div>
+
+    <div class="total">
+      <strong id="order-total"></strong>
+    </div>
+
+    <h3>Payment Method</h3>
+    <div class="payment-options">
+      <label><input type="radio" name="payment" value="UPI"> UPI</label>
+      <label><input type="radio" name="payment" value="Card"> Debit / Credit Card</label>
+      <label><input type="radio" name="payment" value="COD"> Cash on Delivery</label>
+    </div>
+
+    <button id="place-order-btn" class="buy-now">Place Order</button>
+  </div>
+</section>
+
+<script src="checkout.js"></script>
+</body>
+</html>
