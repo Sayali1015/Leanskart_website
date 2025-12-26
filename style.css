@@ -248,36 +248,90 @@ border-radius: 5px;
   margin-bottom: 15px;
 }
 
+/* ===== LENSKART LOGIN PAGE ===== */
+
 .login-page {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: #f5f5f5;
+  background: linear-gradient(135deg, #f1f7ff, #e6f0ff);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Card */
 .login-box {
-  background: white;
-  padding: 30px;
-  width: 300px;
-  border-radius: 8px;
+  background: #ffffff;
+  width: 360px;
+  padding: 35px 30px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
   text-align: center;
 }
 
-.login-box input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
+/* Logo / Title */
+.login-box h2 {
+  margin-bottom: 25px;
+  color: #0b5394;
+  font-size: 26px;
+  font-weight: 700;
 }
 
+/* Inputs */
+.login-box input {
+  width: 100%;
+  padding: 14px 12px;
+  margin-bottom: 16px;
+  border: 1.5px solid #d6e4ff;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-box input:focus {
+  border-color: #0b5394;
+  box-shadow: 0 0 0 3px rgba(11, 83, 148, 0.15);
+}
+
+/* Login Button */
 .login-box button {
   width: 100%;
-  padding: 10px;
+  padding: 14px;
   background: #0b5394;
-  color: white;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
   border: none;
+  border-radius: 8px;
   cursor: pointer;
+  transition: 0.3s;
 }
+
+.login-box button:hover {
+  background: #083b6f;
+}
+
+/* Extra text */
+.login-box p {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-box p span {
+  color: #0b5394;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Mobile Responsive */
+@media (max-width: 420px) {
+  .login-box {
+    width: 90%;
+  }
+}
+
 
 
 

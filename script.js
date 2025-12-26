@@ -60,57 +60,7 @@ if (user && user.name) {
   userNameEl.innerText = "";
 }
 
-
-// Password validation function
-function validatePassword(password) {
-  const minLength = password.length >= 6;
-  const hasUppercase = /[A-Z]/.test(password);
-  const hasNumber = /[0-9]/.test(password);
-
-  return minLength && hasUppercase && hasNumber;
-}
-
-
-// Login
-// loginBtn.addEventListener("click", () => {
-//   const name = prompt("Enter username:");
-//   const password = prompt(
-//     "Enter password:\n(Min 6 chars, 1 uppercase, 1 number)"
-//   );
-
-//   if (!name || !password) {
-//     alert("All fields are required");
-//     return;
-//   }
-
-//   if (!validatePassword(password)) {
-//     alert(
-//       "Invalid Password!\nPassword must contain:\n• 6 characters\n• 1 uppercase letter\n• 1 number"
-//     );
-//     return;
-//   }
-
-  // Save user (password NOT shown again)
-//   localStorage.setItem(
-//   "user",
-//   JSON.stringify({ name: name })
-// );
-
-//   alert("Login successful!");
-//   location.reload();
-// });
-
-
-// Logout
-// logoutBtn.addEventListener("click", () => {
-//   localStorage.removeItem("user");
-//   location.reload();
-// });
-
 const userName = document.getElementById("user-name");
-// const loginBtn = document.getElementById("login-btn");
-// const logoutBtn = document.getElementById("logout-btn");
-
 const loggedInUser = localStorage.getItem("loggedInUser");
 
 if (loggedInUser) {
