@@ -43,14 +43,6 @@ lenskart-clone/
 │── logo.png
 │── README.md
 
-
----
-
-## 🌐 Live Demo
-
-👉 https://Sayali1015.github.io/lenskart-clone/
-
-
 ---
 
 ## 🧠 What I Learned
