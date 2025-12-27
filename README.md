@@ -25,7 +25,7 @@ This project demonstrates core frontend concepts such as DOM manipulation, local
 - HTML5
 - CSS3
 - JavaScript (ES6)
-- Git & GitHub
+- GitHub
 
 ---
 
