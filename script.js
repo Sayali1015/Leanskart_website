@@ -2,7 +2,17 @@ const products = [
   { name: "Round Eyeglasses", price: 999, img: "photos/910MG4380_1-new.webp" },
   { name: "Square Eyeglasses", price: 1299, img: "photos/BuyBlackClearMilestoneSquareSunglasses_1.webp" },
   { name: "Blue Cut Glasses", price: 1499, img: "photos/1_7c26482c-001f-49a6-adde-e10f49cfec0c_618x.webp" },
-  { name: "Stylish Frame", price: 1999, img: "photos/images.jpg" }
+  { name: "Stylish Frame", price: 1999, img: "photos/images.jpg" },
+  { name: "Kids Frame", price: 999, img: "photos/kids.avif" },
+  { name: "Cat-Eye Frame", price: 499, img: "photos/Cat-Eye.webp" },
+  { name: "Sports Frame", price: 2999, img: "photos/sports.webp" },
+  { name: "Oval Frame", price: 399, img: "photos/shopping.webp" },
+  { name: "Rectangle Frame", price: 699, img: "photos/OPERA.SilverBlackRectangleSunglasses_4__compressed.webp"},
+  { name: "Reading Frame", price: 999, img: "photos/reading.avif" },
+  { name: "Vintage Frame", price: 2999, img: "photos/vintage.jpg" },
+    { name: "Fancy Frame", price: 999, img: "photos/Fancy.jpg" }
+
+
 ];
 
 const productList = document.getElementById("product-list");
