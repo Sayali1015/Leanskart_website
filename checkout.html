@@ -21,17 +21,45 @@
     <div class="total">
       <strong id="order-total"></strong>
     </div>
+<h3 class="pay-title">Payment Method</h3>
 
-    <h3>Payment Method</h3>
-    <div class="payment-options">
-      <label><input type="radio" name="payment" value="UPI"> UPI</label>
-      <label><input type="radio" name="payment" value="Card"> Debit / Credit Card</label>
-      <label><input type="radio" name="payment" value="COD"> Cash on Delivery</label>
+<div class="payment-options">
+  <label class="pay-card">
+    <input type="radio" name="payment" checked>
+    <span class="icon">📱</span>
+    <div>
+      <strong>UPI</strong>
+      <p>Pay using Google Pay, PhonePe, Paytm</p>
     </div>
+  </label>
 
-    <button id="place-order-btn" class="buy-now">Place Order</button>
-  </div>
-</section>
+  <label class="pay-card">
+    <input type="radio" name="payment">
+    <span class="icon">💳</span>
+    <div>
+      <strong>Debit / Credit Card</strong>
+      <p>Visa, MasterCard, RuPay supported</p>
+    </div>
+  </label>
+
+  <label class="pay-card">
+    <input type="radio" name="payment">
+    <span class="icon">🚚</span>
+    <div>
+      <strong>Cash on Delivery</strong>
+      <p>Pay when your order arrives</p>
+    </div>
+  </label>
+</div>
+
+
+<button id="place-order-btn" class="place-order-btn">
+  Place Order
+</button>
+
+  </section>
+    
+
 
 <script src="checkout.js"></script>
 </body>

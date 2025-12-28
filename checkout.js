@@ -10,6 +10,7 @@ if (cart.length === 0) {
 }
 
 let total = 0;
+orderItems.innerHTML = "";
 
 cart.forEach(item => {
   total += item.price;
@@ -27,5 +28,6 @@ placeOrderBtn.addEventListener("click", () => {
   }
 
   localStorage.removeItem("cart");
-  window.location.href = "success.html";
+ window.location.href = "photos/order-placed.html";
+
 });
