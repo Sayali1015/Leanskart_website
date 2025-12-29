@@ -38,6 +38,7 @@ lenskart-clone/
 │── register.html
 │── checkout.html
 │── success.html
+│── order-placed.html
 │── style.css
 │── script.js
 │── register.js
