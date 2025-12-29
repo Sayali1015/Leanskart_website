@@ -7,116 +7,21 @@
 </head>
 <body class="login-page">
 
-<div class="flip-container" id="flipCard">
-  <div class="flipper">
+  <div class="login-box" id="loginBox">
+    <h2>Login to Lenskart</h2>
+    <p>Get the perfect eyewear for you</p>
 
-    <!-- FRONT (LOGIN) -->
-    <div class="front login-box">
-      <h2>Login to Lenskart</h2>
-      <p>Get the perfect eyewear for you</p>
+    <input type="text" id="username" placeholder="Enter username">
+    <input type="password" id="password" placeholder="Enter password">
 
-      <input type="text" id="loginUsername" placeholder="Enter username">
-      <input type="password" id="loginPassword" placeholder="Enter password">
-
-      <button onclick="login()">Login</button>
-
-      <p class="switch">
-        New user? <span onclick="showRegister()">Register here</span>
-      </p>
-    </div>
-
-
-     <!-- BACK (SUCCESS) -->
-    <div class="back success-box">
-      <h1>Login Successful 🎉</h1><br><br><br><br>
-      <p>Redirecting to home page...</p>
-    </div>
-
-  </div>
-</div>
-
-  <!-- REGISTER BOX -->
-  <div class="login-box" id="registerBox" style="display:none;">
-    <h2>Register</h2>
-    <p>Create your Lenskart account</p>
-
-    <input type="text" id="regUsername" placeholder="Enter username">
-    <input type="password" id="regPassword" placeholder="Enter password">
-    <input type="password" id="regConfirm" placeholder="Confirm password">
-
-    <button onclick="register()">Register</button>
+    <button onclick="login()">Login</button>
 
     <p class="switch">
-      Already registered? <span onclick="showLogin()">Login here</span>
+      New user?
+      <a href="register.html">Register here</a>
     </p>
   </div>
 
-  <script>
-    function showRegister() {
-      document.getElementById("loginBox").style.display = "none";
-      document.getElementById("registerBox").style.display = "block";
-    }
-
-    function showLogin() {
-      document.getElementById("registerBox").style.display = "none";
-      document.getElementById("loginBox").style.display = "block";
-    }
-
-    function register() {
-      const username = document.getElementById("regUsername").value;
-      const password = document.getElementById("regPassword").value;
-      const confirm = document.getElementById("regConfirm").value;
-
-      if (username === "" || password === "" || confirm === "") {
-        alert("Please fill all fields");
-        return;
-      }
-
-      if (password.length < 6) {
-        alert("Password must be at least 6 characters");
-        return;
-      }
-
-      if (password !== confirm) {
-        alert("Passwords do not match");
-        return;
-      }
-
-      // Save credentials
-      localStorage.setItem("regUsername", username);
-      localStorage.setItem("regPassword", password);
-
-      alert("Registration successful! Please login.");
-      showLogin();
-    }
-
-   function login() {
-  const username = document.getElementById("loginUsername").value;
-  const password = document.getElementById("loginPassword").value;
-
-  const storedUser = localStorage.getItem("regUsername");
-  const storedPass = localStorage.getItem("regPassword");
-
-  if (username === "" || password === "") {
-    alert("Please fill all fields");
-    return;
-  }
-
-  if (username === storedUser && password === storedPass) {
-    localStorage.setItem("loggedInUser", username);
-
-    // FLIP CARD
-    document.getElementById("flipCard").classList.add("flip");
-
-    // REDIRECT AFTER FLIP
-    setTimeout(() => {
-      window.location.href = "index.html";
-    }, 2000); // 2 seconds
-  } else {
-    alert("Invalid username or password");
-  }
-}
-  </script>
-
+  <script src="login.js"></script>
 </body>
 </html>
