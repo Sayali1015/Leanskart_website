@@ -33,11 +33,16 @@ This project demonstrates core frontend concepts such as DOM manipulation, local
 
 lenskart-clone/
 │── index.html
+│── login.html
+│── logout.html
 │── cart.html
+│── register.html
 │── checkout.html
 │── success.html
 │── style.css
 │── script.js
+│── register.js
+│── login.js
 │── cart.js
 │── checkout.js
 │── logo.png
