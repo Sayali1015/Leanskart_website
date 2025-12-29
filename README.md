@@ -8,7 +8,6 @@ This project demonstrates core frontend concepts such as DOM manipulation, local
 ## 🚀 Features
 
 - Product listing with images and prices
-- Search and category-based filtering
 - Add to Cart & Remove from Cart
 - Cart total calculation
 - Login / Logout with password validation
