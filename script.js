@@ -10,7 +10,14 @@ const products = [
   { name: "Rectangle Frame", price: 699, img: "photos/OPERA.SilverBlackRectangleSunglasses_4__compressed.webp"},
   { name: "Reading Frame", price: 999, img: "photos/reading.avif" },
   { name: "Vintage Frame", price: 2999, img: "photos/vintage.jpg" },
-    { name: "Fancy Frame", price: 999, img: "photos/Fancy.jpg" }
+  { name: "Fancy Frame", price: 999, img: "photos/Fancy.jpg" },
+  { name: "Zero Power Frame", price: 999, img: "photos/zero _power.webp" },
+  { name: "EyeProtection Frame", price: 2999, img: "photos/1.webp" },
+  { name: "Avitor Frame", price: 4999, img: "photos/2.webp" },
+  { name: "Contact Lens", price: 699, img: "photos/contactlens1.webp" },
+  { name: "Turquoise Color Lens", price: 699, img: "photos/ciba-vision-freshlook-colorble-turqu-color-len-2-len-box_untitled-1_2.webp" },
+  { name: "Clear Lens", price: 699, img: "photos/shopping (1).webp" }
+
 
 
 ];
